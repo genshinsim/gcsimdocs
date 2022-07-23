@@ -1,3 +1,8 @@
+---
+sidebar_position: 1
+title: Config File
+---
+
 # Config file
 
 The gcsim config file contains all the information necessary for the simulator run a simulation. The config file can be roughly broken down into 3 parts:
@@ -49,6 +54,14 @@ Logic operators
 - `!`: not
 
 The one exception to this is that some system functions maybe take string as inputs. However, these strings cannot be assigned to variables or manipulated otherwise.
+
+### Fields
+
+Fields are special syntax for accessing in sim data during an iteration. Fields always starts with a `.`. For example, `.energy.xiangling` will evaluate to the current energy for `xiangling`.
+
+All fields must evaluate to a number. For fields that are true or false, they will evaluate to 1 if true and 0 if false.
+
+For more details on the available fields, see: [Fields](fields)
 
 ### Variables
 
