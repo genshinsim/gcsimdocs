@@ -103,9 +103,96 @@ if 1 {
 
 ### `if` statement
 
+`if` statement takes the following format:
+
+```
+if <condition> {
+
+} else {
+
+}
+```
+
+`<condition>` can be any expression that evalutes into a number. `condition` is considered false if it evaluates to 0 and true otherwise.
+
 ### `while` statement
 
+`while` statement takes the following format:
+
+```
+while <condition> {
+
+}
+```
+
+`<condition>` can be any expression that evalutes into a number. `condition` is considered false if it evaluates to 0 and true otherwise.
+
+`while` will repeat the block for as long as condition evalutes true.
+
+#### Infinite loop special caution
+
+Be careful when using infinite loops. gcsim does not have a way to detect infinite loops. An infinite loop that never exits will cause the simulation to hang with no noteable error.
+
+The exception to this is if there is an action (or `wait(x)`) inside an infinite loop, for example:
+
+```
+while 1 {
+    xiangling attack;
+}
+```
+
+This is ok because any time a character action (or wait) is executed, the evaluation of the script is paused and the simulation takes over. Since the simulation itself has an exit condition (i.e. duration), this infinite loop will properly be terminated once the simulation reaches its exit condition.
+
+However, the following will cause the simulation to hang forever because script execution is never paused, so the simulator never gets a chance to check its exit conditions:
+
+```
+while 1 {
+    print("hi)
+}
+```
+
+`wait` is a special case in that it behaves just like a character action. So the following will exit properly according to the simulations exit conditions:
+
+```
+while 1 {
+    wait(1);
+}
+```
+
+Also be careful of infinite loops that seems like it contains a character action but may not actually ever evaluate it. For example:
+
+```
+while 1 {
+    if 0 {
+        //this block will never be reached!!
+        xiangling attack;
+    }
+}
+```
+
+In this example the `xiangling attack;` can never be reached, causing the script to never actually pause and therefore the simulation will never reach its exit conditon.
+
 ### `switch` statement
+
+`switch` statement takes the following format:
+
+```
+switch <expr> {
+    case <expr>:
+        //do action here
+    case <expr>:
+        //do action here
+        fallthrough;
+    case <expr>:
+        //will continue from above
+    default:
+        //default case
+}
+```
+
+A case is executed if the switch expression equals the case expression. There is no `break;` at the end of each case. By default, once a case finishes evaluating, the switch statement will exit. The exception to this is if a fallthrough is present. This will cause the case immediately below the current case to be executed as well.
+
+The `default` case is executed if none of the cases equals the switch expression. If no `default` is present, the switch will simply exit.
 
 ### `apl` statement
 
