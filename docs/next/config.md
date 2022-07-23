@@ -97,7 +97,8 @@ Variable is subject to scoping in blocks such as `if`, `while`, `switch`, `apl` 
 ```
 let x = 1;
 if 1 {
-
+    let x = 2;
+    let y = x + 1; //y will be 3 here
 }
 ```
 
@@ -147,7 +148,7 @@ However, the following will cause the simulation to hang forever because script 
 
 ```
 while 1 {
-    print("hi)
+    print("hi);
 }
 ```
 
