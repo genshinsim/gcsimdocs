@@ -8,20 +8,81 @@ title: Config File
 The gcsim config file contains all the information necessary for the simulator run a simulation. The config file can be roughly broken down into 3 parts:
 
 - simulator options
-- character stats/weapon/artifact block
+- character data
+- enemy data
 - the script (gcsl) the simulator needs to execute
 
-## Simulator options
+## Comments
 
-## Character block
+Any text following either a `//` or a `#` is treated as a comment and will be ignored until the end of the line. There are no multiline comments
+
+## Options
+
+Options can be set as follows:
+
+```
+options iteration=1000 duration=90 swap_delay=14;
+```
+
+Following are valid options:
+
+- `defhalt`: Specifies whether to enable defense halted on hitlag. Default true.
+- `hitlag`: Specifies whether hitlag should be enabled. Default true.
+- `iteration`: Specifies the number of iterations to run. Default 1000
+- `duration`: Duration to run the sim. No default set
+- `workers`: Number of workers to use. Only valid when using cmd line. Ignored in web
+- `swap_delay`: Number of frames it takes to swap characters. Default 1.
+
+## Character
+
+Character data can be roughly broken into 4 parts:
+
+- `<name> char` data such as level, base stats, cons, talents, etc..
+- `<name> add weapon=<weapon name>` data such as weapon base stats, refine
+- `<name> add set=<set name>` or artifact data, for set bonuses
+- `<name> add stats` for any character stats
+
+For example:
+
+```
+bennett char lvl=70/80 cons=2 talent=6,8,8 +params=[a=1];
+bennett add weapon="favoniussword" refine=1 lvl=90/90 +params=[b=2];
+bennett add set="noblesseoblige" count=4 +params=[c=1];
+bennett add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311 ; #main
+bennett add stats hp=717 hp%=0.058 atk=121 atk%=0.635 def=102 em=42 er=0.156 cr=0.128 cd=0.265 ; #subs
+```
+
+An optional param flag may be added to the character, the weapon, or the set via the `+params` flag. This optional param is defined by each character.
+
+However, all characters have an optional flag for setting starting energy. For example:
+
+```
+bennett char lvl=70/80 cons=2 talent=6,8,8 +params=[start_energy=20];
+```
+
+This will set Bennett to start with 20 energy. **Warning**: There is no sanity check on the starting energy. So if you set this to a negative number or a really large number, behaviour is undefined. If this param is not set, then the energy will default to the max energy for the character (i.e. ready to burst).
+
+With the except of the stats (i.e. `hp`, `atk`, etc...), all other fields not starting with a `+` are mandatory
+
+## Enemy
+
+Enemy example:
+
+```
+target lvl=88 resist=0.1
+```
+
+You can also specify each resist separately:
+
+```
+target lvl=88 pyro=0.1 dendro=0.1 hydro=0.1 electro=0.1 geo=0.1 anemo=0.1 physical=.1 cryo=.1;
+```
+
+There must be at least one enemy in the config file. You can have multiple enemies to simulate multi target situation. Each enemy does not have to have the same resistance etc...
 
 ## gcsl
 
 gcsim language or gcsl is the script that the simulator will run. This script tells the simulator what actions to executed. The scripting language includes some basic functionalities such as variables, conditionals, and loops.
-
-### Comments
-
-Comments in gcsl can start with either `//` or `#`. Both are valid. There are no block comments in gcsl.
 
 ### Character actions
 
