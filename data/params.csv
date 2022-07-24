@@ -1,2 +1,6 @@
 character,ability,param,description
-albedo,Burst,bloom,Number of burst hits. Defaults to 2
+albedo,burst,bloom,Number of burst hits. Defaults to 2
+aloy,aim,weakspot,1 to simulate hitting weakspot. 0 otherwise
+aloy,aim,travel,Travel time of attack in frames. Default 10
+aloy,attack,travel,Travel time of attack in frames. Default 10
+aloy,skill,bomblets,Number of bomblets. Default 2
