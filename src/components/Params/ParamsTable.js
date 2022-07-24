@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import data from "./data.json";
 
 const Table = styled.table`
   border-collapse: collapse;
@@ -48,13 +49,3 @@ export default function ParamsTable({ character }) {
     </div>
   );
 }
-
-const data = {
-  albedo: [
-    {
-      ability: "Burst",
-      param: "bloom",
-      desc: "Number of burst hits. Defaults to 2",
-    },
-  ],
-};

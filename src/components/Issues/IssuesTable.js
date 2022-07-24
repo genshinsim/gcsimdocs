@@ -1,5 +1,5 @@
 import React from "react";
-import data from "./issues.json";
+import data from "./data.json";
 
 export default function FieldsTable({ character }) {
   if (!(character in data)) {

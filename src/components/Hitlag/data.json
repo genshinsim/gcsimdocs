@@ -1,0 +1,13 @@
+{
+  "albedo": {
+    "normal": [
+      {
+        "ability": "N1",
+        "hitHaltTime": 0.12,
+        "hitHaltTimeScale": 0.01,
+        "canBeDefenseHalt": false,
+        "deployable": false
+      }
+    ]
+  }
+}

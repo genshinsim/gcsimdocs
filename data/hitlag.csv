@@ -1,0 +1,2 @@
+character,category,ability,hitHaltTime,hitHaltScale,canBeDefenseHalt,deployable
+albedo,normal,N1,0.12,0.01,false,false

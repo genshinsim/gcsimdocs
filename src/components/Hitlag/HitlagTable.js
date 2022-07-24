@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
+import data from "./data.json";
 
 const Table = styled.table`
   border-collapse: collapse;
@@ -82,17 +83,3 @@ export default function HitlagTable({ character }) {
   });
   return <Tabs>{tabs}</Tabs>;
 }
-
-const data = {
-  albedo: {
-    normal: [
-      {
-        ability: "N1",
-        hitHaltTime: 0.12,
-        hitHaltTimeScale: 0.01,
-        canBeDefenseHalt: false,
-        deployable: false,
-      },
-    ],
-  },
-};

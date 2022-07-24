@@ -1,0 +1,9 @@
+{
+  "albedo": [
+    {
+      "ability": "Burst",
+      "param": "bloom",
+      "desc": "Number of burst hits. Defaults to 2"
+    }
+  ]
+}
