@@ -60,25 +60,52 @@ However, all characters have an optional flag for setting starting energy. For e
 bennett char lvl=70/80 cons=2 talent=6,8,8 +params=[start_energy=20];
 ```
 
-This will set Bennett to start with 20 energy. **Warning**: There is no sanity check on the starting energy. So if you set this to a negative number or a really large number, behaviour is undefined. If this param is not set, then the energy will default to the max energy for the character (i.e. ready to burst).
+This will set Bennett to start with 20 energy.
+
+:::caution
+
+There is no sanity check on the starting energy. So if you set this to a negative number or a really large number, behaviour is undefined. If this param is not set, then the energy will default to the max energy for the character (i.e. ready to burst).
+
+:::
 
 With the except of the stats (i.e. `hp`, `atk`, etc...), all other fields not starting with a `+` are mandatory
+
+## Active character
+
+All configs must have an active character specified. Otherwise you will get an error. Following is an example on how to set an active char (in this case to Xiangling):
+
+```
+active xiangling;
+```
 
 ## Enemy
 
 Enemy example:
 
 ```
-target lvl=88 resist=0.1
+target lvl=88 resist=0.1 pos=0,0;
 ```
+
+:::note
+
+Target starting position can be specified with `pos=x,y`. Note that if no position is provided, target will default to (0, 0). If you have multiple targets, make sure to set their starting position properly. Otherwise you may get unintended behaviour such as otherwise single target abilities hitting multiple targets.
+
+:::
 
 You can also specify each resist separately:
 
 ```
-target lvl=88 pyro=0.1 dendro=0.1 hydro=0.1 electro=0.1 geo=0.1 anemo=0.1 physical=.1 cryo=.1;
+target lvl=88 pyro=0.1 dendro=0.1 hydro=0.1 electro=0.1 geo=0.1 anemo=0.1 physical=.1 cryo=.1 pos=0,0;
 ```
 
-There must be at least one enemy in the config file. You can have multiple enemies to simulate multi target situation. Each enemy does not have to have the same resistance etc...
+There must be at least one enemy in the config file. To add multiple enemies, simply repeat the target line. Each enemy does not have to have the same resistance etc... For example:
+
+```
+target lvl=100 resist=0.1;
+target lvl=88 resist=0.05;
+```
+
+This would add 2 targets (making it a multi target simulation). Each target has different lvl and resistance.
 
 ## gcsl
 
