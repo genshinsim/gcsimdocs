@@ -1,0 +1,6 @@
+character,fields,description
+albedo,.albedo.skill | .albedo.elevator,Evaluates to 1 if skill is currently active
+albedo,.albedo.c2stacks,Current number of C2 stacks
+albedo,.mods.<character>.albedo-a4,Whether or not Albedo A4 buff is active on the specified character
+fischl,.fischl.oz,Remaining frames Oz is active for. 0 if not active.
+fischl,.fischl.oz-source,The source frame Oz is spawned on

@@ -2,25 +2,28 @@
 title: Albedo
 ---
 
-## Known issues
-
-- Burst does not generate randomly and instead rely on a param to specify number of hits.
-- Burst ticks missing precise frame count
+import HitlagTable from "@site/src/components/Hitlag/HitlagTable";
+import FieldsTable from "@site/src/components/Fields/FieldsTable";
+import ParamsTable from "@site/src/components/Params/ParamsTable";
+import FramesTable from "@site/src/components/Frames/FramesTable";
+import IssuesTable from "@site/src/components/Issues/IssuesTable";
 
 ## Frames
 
+<FramesTable character="albedo" />
+
+## Hitlag Data
+
+<HitlagTable character="albedo" />
+
+## Known issues
+
+<IssuesTable character="albedo" />
+
 ## Params
 
-| Ability | Tag     | Description                                                                                   |
-| ------- | ------- | --------------------------------------------------------------------------------------------- |
-| Burst   | `bloom` | Number of burst hits. Defaults to 2. Size of hit is circle with radius 2 centering on player. |
+<ParamsTable character="albedo" />
 
-## Custom fields
+## Fields
 
-_if more one field is available, then either will work_
-
-| Field                                     | Description                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------ |
-| `.albedo.skill` <br /> `.albedo.elevator` | Evaluates to 1 if Albedo skill is currently active                 |
-| `.albedo.c2stacks`                        | Current number of C2 stacks                                        |
-| `.mods.<character>.albedo-a4`             | Whether or not Albedo A4 buff is active on the specified character |
+<FieldsTable character="albedo" />

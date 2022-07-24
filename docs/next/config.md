@@ -191,7 +191,7 @@ while <condition> {
 
 `while` will repeat the block for as long as condition evalutes true.
 
-#### Infinite loop special caution
+:::caution Infinite loops
 
 Be careful when using infinite loops. gcsim does not have a way to detect infinite loops. An infinite loop that never exits will cause the simulation to hang with no noteable error.
 
@@ -233,6 +233,8 @@ while 1 {
 ```
 
 In this example the `xiangling attack;` can never be reached, causing the script to never actually pause and therefore the simulation will never reach its exit conditon.
+
+:::
 
 ### `switch` statement
 

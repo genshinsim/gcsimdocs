@@ -1,5 +1,5 @@
 ---
-title: Fischl
+title: Klee
 ---
 
 import HitlagTable from "@site/src/components/Hitlag/HitlagTable";
@@ -10,20 +10,20 @@ import IssuesTable from "@site/src/components/Issues/IssuesTable";
 
 ## Frames
 
-<FramesTable character="fischl" />
+<FramesTable character="klee" />
 
 ## Hitlag Data
 
-<HitlagTable character="fischl" />
+<HitlagTable character="klee" />
 
 ## Known issues
 
-<IssuesTable character="fischl" />
+<IssuesTable character="klee" />
 
 ## Params
 
-<ParamsTable character="fischl" />
+<ParamsTable character="klee" />
 
 ## Fields
 
-<FieldsTable character="fischl" />
+<FieldsTable character="klee" />
