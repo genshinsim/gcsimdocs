@@ -1,9 +1,417 @@
 {
   "albedo": [
     {
-      "ability": "Burst",
+      "ability": "burst",
       "param": "bloom",
-      "desc": "Number of burst hits. Defaults to 2"
+      "desc": "number of bloom hits. default 2"
+    }
+  ],
+  "aloy": [
+    {
+      "ability": "attack",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames"
+    },
+    {
+      "ability": "aim",
+      "param": "weakspot",
+      "desc": "Hit weakspot with aimed shot. default 0 (false), 1 for true "
+    },
+    {
+      "ability": "skill",
+      "param": "bomblets",
+      "desc": "default 2"
+    },
+    {
+      "ability": "skill",
+      "param": "bomblet_coil_stacks",
+      "desc": "default 2"
+    },
+    {
+      "ability": "skill",
+      "param": "delay",
+      "desc": "default 0"
+    }
+  ],
+  "amber": [
+    {
+      "ability": "attack",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    },
+    {
+      "ability": "aim",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    },
+    {
+      "ability": "aim",
+      "param": "bunny",
+      "desc": "shoot the bunny (for C2+ only). default 0 (false). no damage if 1 (true)"
+    },
+    {
+      "ability": "aim",
+      "param": "weakspot",
+      "desc": "Hit weakspot with aimed shot. default 0 (false), 1 for true "
+    },
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "frames to hold bunny for (for throwing). default 0"
+    }
+  ],
+  "beidou": [
+    {
+      "ability": "skill",
+      "param": "counter",
+      "desc": "number of counter hits. default 0. 2 for perfect counter. does not affect frames"
+    }
+  ],
+  "bennett": [
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "default 0 for skill tap. 1 for short hold, 2 for long hold"
+    }
+  ],
+  "diluc": [
+    {
+      "ability": "burst",
+      "param": "dot",
+      "desc": "number of dot ticks. default 2"
+    },
+    {
+      "ability": "burst",
+      "param": "explode",
+      "desc": "if explode from burst hits. default 0 (no hit)"
+    }
+  ],
+  "diona": [
+    {
+      "ability": "attack",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    },
+    {
+      "ability": "aim",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    },
+    {
+      "ability": "skill",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    },
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "default 0 for skill tap. 1 for hold"
+    }
+  ],
+  "eula": [
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "default 0 for skill tap. 1 for hold"
+    }
+  ],
+  "fischl": [
+    {
+      "ability": "attack",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    }
+  ],
+  "ganyu": [
+    {
+      "ability": "attack",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    },
+    {
+      "ability": "aim",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    },
+    {
+      "ability": "aim",
+      "param": "weakspot",
+      "desc": "Hit weakspot with aimed shot. default 0 (false), 1 for true "
+    },
+    {
+      "ability": "skill",
+      "param": "bloom",
+      "desc": "bloom delay from projectile landing default 20 frames"
+    },
+    {
+      "ability": "burst",
+      "param": "radius",
+      "desc": "radius of the targets. default 1m"
+    }
+  ],
+  "gorou": [
+    {
+      "ability": "aim",
+      "param": "weakspot",
+      "desc": "Hit weakspot with aimed shot. default 0 (false), 1 for true "
+    }
+  ],
+  "hutao": [
+    {
+      "ability": "burst",
+      "param": "targets",
+      "desc": "number of targets to simulate burst hitting for healing purposes. actual number of target in sim ignored"
+    }
+  ],
+  "jean": [
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "hold duration for Jean skill. default 0. require > 60 to trigger C1"
+    },
+    {
+      "ability": "skill",
+      "param": "enter",
+      "desc": "number of times enemy enters field. default 0"
+    },
+    {
+      "ability": "skill",
+      "param": "delay",
+      "desc": "number of frames to wait before enemy enters. default 10"
+    }
+  ],
+  "kazuha": [
+    {
+      "ability": "high_plunge",
+      "param": "collide",
+      "desc": "does collide dmg on plunge apply; default 0 (no)"
+    },
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "default 0 for tap. 1 for hold"
+    }
+  ],
+  "keqing": [
+    {
+      "ability": "skill",
+      "param": "c1",
+      "desc": "number of hits for c1 (since explosion caused at both start and end). default 1"
+    }
+  ],
+  "klee": [
+    {
+      "ability": "attack",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    },
+    {
+      "ability": "skill",
+      "param": "walk",
+      "desc": "if set (any value), attack counter will reset to simulate walk cancel"
+    },
+    {
+      "ability": "charge",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames"
+    },
+    {
+      "ability": "skill",
+      "param": "bounce",
+      "desc": "number of bounce hits that lands. default 1"
+    },
+    {
+      "ability": "skill",
+      "param": "mine",
+      "desc": "number of mines that hits. default 2"
+    }
+  ],
+  "kokomi": [
+    {
+      "ability": "skill",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    }
+  ],
+  "lisa": [
+    {
+      "ability": "charge",
+      "param": "hits",
+      "desc": "number of targets hit by charge attack. default 1"
+    },
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "default 0 for skill tap. 1 for hold"
+    }
+  ],
+  "ningguang": [
+    {
+      "ability": "attack",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    },
+    {
+      "ability": "charge",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    },
+    {
+      "ability": "burst",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    }
+  ],
+  "rosaria": [
+    {
+      "ability": "skill",
+      "param": "nobehind",
+      "desc": "default 0. 1 for striking behind for A2 purposes"
+    }
+  ],
+  "sara": [
+    {
+      "ability": "attack",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    },
+    {
+      "ability": "aim",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    },
+    {
+      "ability": "aim",
+      "param": "weakspot",
+      "desc": "Hit weakspot with aimed shot. default 0 (false), 1 for true "
+    },
+    {
+      "ability": "skill",
+      "param": "wave_cluster_hits",
+      "desc": "use numbers in each slot to control the # of hits. So for center hit, then 3 hits from each wave, set wave_cluster_hits=33331"
+    },
+    {
+      "ability": "skill",
+      "param": "waveAttackProcs",
+      "desc": "used to determine which waves proc the attack buff. same format as wave_cluster_hits"
+    }
+  ],
+  "shenhe": [
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "0 for press (default), 1 for hold"
+    }
+  ],
+  "tartaglia": [
+    {
+      "ability": "attack",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames (range mode only)"
+    },
+    {
+      "ability": "aim",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames (range mode only)"
+    },
+    {
+      "ability": "aim",
+      "param": "weakspot",
+      "desc": "Hit weakspot with aimed shot. default 0 (false), 1 for true "
+    },
+    {
+      "ability": "charge",
+      "param": "hitWeakPoint",
+      "desc": "hit weak point for charge attack in melee mode. default 0 (false)"
+    }
+  ],
+  "venti": [
+    {
+      "ability": "attack",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    },
+    {
+      "ability": "aim",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    },
+    {
+      "ability": "aim",
+      "param": "weakspot",
+      "desc": "Hit weakspot with aimed shot. default 0 (false), 1 for true "
+    },
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "default 0 for skill tap. 1 for hold"
+    }
+  ],
+  "xiao": [
+    {
+      "ability": "high_plunge",
+      "param": "plunge_hits",
+      "desc": "determine how many plunge falling hits you do on the way down. default 0"
+    },
+    {
+      "ability": "low_plunge",
+      "param": "plunge_hits",
+      "desc": "determine how many plunge falling hits you do on the way down. default 0"
+    }
+  ],
+  "xingqiu": [
+    {
+      "ability": "skill",
+      "param": "orbital",
+      "desc": "whether or not orbital is in contact with target (resulting in hydro app). default 0"
+    },
+    {
+      "ability": "burst",
+      "param": "orbital",
+      "desc": "whether or not orbital is in contact with target (resulting in hydro app). default 0"
+    }
+  ],
+  "yanfei": [
+    {
+      "ability": "attack",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    }
+  ],
+  "yoimiya": [
+    {
+      "ability": "attack",
+      "param": "travel",
+      "desc": "projectile travel time. default 10 frames "
+    }
+  ],
+  "yunjin": [
+    {
+      "ability": "skill",
+      "param": "a1",
+      "desc": "set this to 1 for A1 skill effect using skill press frame count (i.e., the minimum frames possible)"
+    },
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "default 0 for skill press, 1 for first charge level, and 2 for second charge level, using the appropriate frame counts."
+    }
+  ],
+  "zhongli": [
+    {
+      "ability": "skill",
+      "param": "max",
+      "desc": "max number times resonance can hit (simulate maybe out of range of a construct)"
+    },
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "default 0 for skill tap. 1 for hold"
+    },
+    {
+      "ability": "skill",
+      "param": "hold_nostele",
+      "desc": "default 0. if 1 no stele will be created (i.e. shield only). hold will take precedence over this"
     }
   ]
 }

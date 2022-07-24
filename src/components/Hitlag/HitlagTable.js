@@ -69,17 +69,22 @@ export default function HitlagTable({ character }) {
   }
   const char = data[character];
   let tabs = [];
+  let count = 0;
   abils.forEach((a, i) => {
     //skip if no data for this tab
     if (!(a in char)) {
       return;
     }
     console.log(char[a]);
+    count++;
     tabs.push(
       <TabItem value={a} label={abilLabels[i]} key={a}>
         <AbilHitlag data={char[a]} />
       </TabItem>
     );
   });
+  if (count == 0) {
+    return <div>No hitlag data for character</div>;
+  }
   return <Tabs>{tabs}</Tabs>;
 }

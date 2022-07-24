@@ -26,7 +26,9 @@ export default function ParamsTable({ character }) {
   const rows = data[character].map((e) => {
     return (
       <tr key={character}>
-        <TD>{e.ability}</TD>
+        <TD>
+          <code>{e.ability}</code>
+        </TD>
         <TD>
           <code>{e.param}</code>
         </TD>

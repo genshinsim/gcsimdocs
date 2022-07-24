@@ -103,8 +103,8 @@ hl.data.forEach((e, i) => {
     ability: e[2],
     hitHaltTime: parseFloat(e[3]),
     hitHaltTimeScale: parseFloat(e[4]),
-    canBeDefenseHalt: e[5] === "true" ? true : false,
-    deployable: e[6] === "true" ? true : false,
+    canBeDefenseHalt: e[5].toLowerCase() === "true" ? true : false,
+    deployable: e[6].toLowerCase() === "true" ? true : false,
   });
 });
 fs.writeFileSync(
