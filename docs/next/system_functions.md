@@ -47,6 +47,22 @@ f();
 
 f is function that takes no argument and will evaluate to the current frame number the simulation is on.
 
+## rand
+
+```
+rand();
+```
+
+rand evalutes to an uniformly distributed random number between 0 and 1.
+
+## randnorm
+
+```
+randnorm();
+```
+
+randnorm evalutes to a normally distributed random number with mean 0 and std dev of 1.
+
 ## set_particle_delay
 
 ```
