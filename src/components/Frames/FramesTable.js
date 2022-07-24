@@ -15,7 +15,7 @@ function Vid({ vid }) {
         <>
           <a href={vid.count} target="_blank" rel="noreferrer">
             Sheet
-          </a>
+          </a>{" "}
           (credit: {vid.count_credit === "" ? "Unknown" : vid.count_credit})
         </>
       ) : (
