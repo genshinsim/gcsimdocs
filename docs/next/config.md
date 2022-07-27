@@ -68,7 +68,7 @@ There is no sanity check on the starting energy. So if you set this to a negativ
 
 :::
 
-With the except of the stats (i.e. `hp`, `atk`, etc...), all other fields not starting with a `+` are mandatory
+With the exception of the stats (i.e. `hp`, `atk`, etc...), all other fields not starting with a `+` are mandatory
 
 ## Active character
 
@@ -109,13 +109,13 @@ This would add 2 targets (making it a multi target simulation). Each target has 
 
 ## gcsl
 
-gcsim language or gcsl is the script that the simulator will run. This script tells the simulator what actions to executed. The scripting language includes some basic functionalities such as variables, conditionals, and loops.
+gcsim language or gcsl is the script that the simulator will run. This script tells the simulator what actions to execute. The scripting language includes some basic functionalities such as variables, conditionals, and loops.
 
 ### Character actions
 
-### Primative types and operators
+### Primitive types and operators
 
-The only primative type is numbers. For purpose of boolean type conditionals, 0 is considered false and anything other than 0 is true.
+The only primitive types are numbers. For purpose of boolean type conditionals, 0 is considered false and anything other than 0 is true.
 
 The following are valid operators:
 
@@ -141,11 +141,11 @@ Logic operators
 - `||`: or
 - `!`: not
 
-The one exception to this is that some system functions maybe take string as inputs. However, these strings cannot be assigned to variables or manipulated otherwise.
+The one exception to this is that some system functions maybe take strings as inputs. However, these strings cannot be assigned to variables or manipulated otherwise.
 
 ### Fields
 
-Fields are special syntax for accessing in sim data during an iteration. Fields always starts with a `.`. For example, `.energy.xiangling` will evaluate to the current energy for `xiangling`.
+Fields are special syntax for accessing in-sim data during an iteration. Fields always starts with a `.`. For example, `.energy.xiangling` will evaluate to the current energy for `xiangling`.
 
 All fields must evaluate to a number. For fields that are true or false, they will evaluate to 1 if true and 0 if false.
 
@@ -220,7 +220,7 @@ while <condition> {
 
 :::caution Infinite loops
 
-Be careful when using infinite loops. gcsim does not have a way to detect infinite loops. An infinite loop that never exits will cause the simulation to hang with no noteable error.
+Be careful when using infinite loops. gcsim does not have a way to detect infinite loops. An infinite loop that never exits will cause the simulation to hang with no noticeable error.
 
 The exception to this is if there is an action (or `wait(x)`) inside an infinite loop, for example:
 
@@ -236,7 +236,7 @@ However, the following will cause the simulation to hang forever because script 
 
 ```
 while 1 {
-    print("hi);
+    print("hi");
 }
 ```
 
