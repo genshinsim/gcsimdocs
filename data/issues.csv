@@ -1,3 +1,4 @@
 character,issue
 albedo,"Burst does not generate randomly and instead rely on a param to specify number of hits."
 albedo,"Burst ticks missing precise frame count"
+albedo,"Burst energy consumption is adjusted by 2 frames to be at 75 (hitmark) instead of 77"
