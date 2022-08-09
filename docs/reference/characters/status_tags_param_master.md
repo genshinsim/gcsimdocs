@@ -90,9 +90,10 @@ Params are additional info that can be passed to individual attack/skill/burst e
 | albedo | `burst` | `bloom` | number of bloom hits. default 2 |
 | aloy | `attack` | `travel` | projectile travel time. default 10 frames |
 | aloy | `aim` | `weakspot` | Hit weakspot with aimed shot. default 0 (false), 1 for true  |
+| aloy | `skill` | `travel` | projectile travel time. default 5 |
 | aloy | `skill` | `bomblets` | default 2 |
 | aloy | `skill` | `bomblet_coil_stacks` | default 2 |
-| aloy | `skill` | `delay` | default 0 |
+| aloy | `skill` | `delay` | determines when bombs start exploding after projectile hits. default 0 |
 | amber | `attack` | `travel` | projectile travel time. default 10 frames  |
 | amber | `aim` | `travel` | projectile travel time. default 10 frames  |
 | amber | `aim` | `bunny` | shoot the bunny (for C2+ only). default 0 (false). no damage if 1 (true) |
