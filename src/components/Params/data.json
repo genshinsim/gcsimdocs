@@ -19,6 +19,11 @@
     },
     {
       "ability": "skill",
+      "param": "travel",
+      "desc": "projectile travel time. default 5"
+    },
+    {
+      "ability": "skill",
       "param": "bomblets",
       "desc": "default 2"
     },
@@ -30,7 +35,7 @@
     {
       "ability": "skill",
       "param": "delay",
-      "desc": "default 0"
+      "desc": "determines when bombs start exploding after projectile hits. default 0"
     }
   ],
   "amber": [
