@@ -62,7 +62,7 @@ At point we should have some sort of rotation in mind of what we want to simulat
 1. Start with Raiden skill
 1. Xingqiu uses his combo
 1. Bennett uses his combo
-1. Xiangling uses his combo
+1. Xiangling uses her combo
 1. Raiden uses burst and spam normals
 1. Repeat
 

@@ -1,5 +1,6 @@
 ---
-sidebar_position: 3
+slug: /migration
+sidebar_position: 2
 ---
 
 # Rewrite Migration Guide
