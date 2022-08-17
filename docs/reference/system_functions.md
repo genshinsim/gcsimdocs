@@ -66,12 +66,18 @@ randnorm evalutes to a normally distributed random number with mean 0 and std de
 ## set_particle_delay
 
 ```
-set_particle_delay(arg);
+set_particle_delay(arg1, arg2);
 ```
 
-set_particle_delay will set the default particle delay to the supplied arg. arg must be a number or an expression that evalutes to a number. If arg evalutes to a number that is less than 0, 0 will be used.
+set_particle_delay will set the default particle delay for the character supplied in arg1 to value in arg2. arg1 must be a string (wrapped in double quotes) and arg2 must be a number or an expression that evalutes to a number. If arg2 evaluates to a number that is less than 0, 0 will be used.
 
 set_particle_delay will always evaluate to 0.
+
+Example:
+
+```
+set_particle_delay("xingqiu", 100);
+```
 
 ## set_default_target
 
