@@ -3,7 +3,7 @@ title: Understanding Config Files
 sidebar_position: 1
 ---
 
-The gcsim config file contains all the information necessary for the simulator run a simulation. The config file can be roughly broken down into the following parts:
+The gcsim config file contains all the information necessary for the simulator to run a simulation. The config file can be roughly broken down into the following parts:
 
 - simulator options
 - character setting
@@ -45,7 +45,7 @@ The `swap_delay` flag tells the simulator how long character swapping should tak
 :::tip
 `swap_delay=12` is one of the more commonly used option for swap frames among the gcsim community. However, since in reality actual swap in game is heavily ping dependent, you can feel free to change this to fit your needs.
 
-A swap delay of 12 corresponds to roughly 100ms ping in game. You can calculate delay in frames from ping roughly as follows
+A swap delay of 12 corresponds to roughly 100ms ping in game. You can calculate delay in frames from ping roughly as follows:
 
 $$
 \text{delay in frames} = \frac{ \text{ping in ms} * 2 * 60 }{1000}
@@ -58,7 +58,7 @@ You may also see older sims with options such as `debug=true` or `mode=sl`. Thes
 
 ## Character Settings
 
-Character settings consists of various syntax to provide basic character information to the simulator such as character level, constellation, talents, weapon, artifact set, and artifact stats.
+Character settings consist of various syntax to provide basic character information to the simulator such as character level, constellation, talents, weapon, artifact set, and artifact stats.
 
 Character data consists of four parts:
 
@@ -81,7 +81,7 @@ Here we tell the simulator to add Bennett to our team, with the given level, con
 
 ### Weapon Settings
 
-Weapon settings tells the simulator what weapon to use for a given character:
+Weapon settings tell the simulator what weapon to use for a given character:
 
 ```
 bennett add weapon="thealleyflash" refine=1 lvl=90/90;
@@ -90,12 +90,12 @@ bennett add weapon="thealleyflash" refine=1 lvl=90/90;
 Weapons `refine` and `lvl` are required. The simulator will automatically calculate all base stats and bonuses of the weapon.
 
 :::note
-Despite the syntax being `add weapon`, you cannot add more than 1 weapon per character
+Despite the syntax being `add weapon`, you cannot add more than 1 weapon per character.
 :::
 
 ### Artifact Sets
 
-Artifact sets is specified as follows:
+Artifact sets are specified as follows:
 
 ```
 bennett add set="noblesseoblige" count=4;
@@ -122,7 +122,7 @@ Unfortunately, you cannot use the stats from the artifact summary page because i
 :::
 
 :::tip
-Contrary to what was stated abov, you can use stats from the artifact summary page for simulating your only team **IF AND ONLY IF you do not change the character's weapon**.
+Contrary to what was stated above, you can use stats from the artifact summary page for simulating your only team **IF AND ONLY IF you do not change the character's weapon**.
 
 To do so, simply add all Attack, Defense, and HP amounts as flat amounts as shown on the artifact summary page.
 
@@ -130,7 +130,7 @@ However, as soon as you change weapons (causing character base stat to change), 
 :::
 
 
-A more practical way of adding artifact stats for simulation your own character is to split them up between each artifact such as follows:
+A more practical way of adding artifact stats for simulating your own character is to split them up between each artifact such as follows:
 
 ```
 yoimiya add stats hp=4780 atk=14 cr=0.039 cd=0.35 em=21;
@@ -155,7 +155,7 @@ This would allow Serpent Spine to start with 5 stacks. For details, see [referen
 
 ### Examples
 
-Following is an example of a team of 4 characters
+Following is an example of a team of 4 characters:
 
 
 ```
@@ -178,7 +178,7 @@ yelan add weapon="favoniuswarbow" refine=3 lvl=90/90;
 yelan add set="noblesseoblige" count=4;
 yelan add stats hp=4780 atk=311 hp%=0.466 hydro%=0.466 cr=0.311; #main
 yelan add stats def=39.36 def%=0.124 hp=507.88 hp%=0.1984 atk=33.08 atk%=0.0992 er=0.1102 em=39.64 cr=0.331 cd=0.7944 ;																															
- 
+
 xingqiu char lvl=90/90 cons=6 talent=9,9,9; 
 #xingqiu add weapon="amenomakageuchi" refine=5 lvl=90/90;
 xingqiu add weapon="harbingerofdawn" refine=5 lvl=90/90;
@@ -272,7 +272,7 @@ Commands written in gcsl are executed sequentially in the order they appear in t
 :::important
 When attempting to execute a character's ability and that ability is not ready (due to cooldown, energy, or stamina), the simulator will wait on that line and keep trying to execute that action until it has succeeded before moving onto the next action.
 
-For example, if you were to do `xingqiu burst` and Xingqiu does not have energy, the simulator will keep trying to use burst (and failing) until Xingqiu finally has enough energy to use burst. In situation where Xingqiu does not have enough energy and there are no additional energy coming in the form of particles, then this can cause the simulation to stall for the entire remainder duration.
+For example, if you were to do `xingqiu burst` and Xingqiu does not have energy, the simulator will keep trying to use burst (and failing) until Xingqiu finally has enough energy to use burst. In situations where Xingqiu does not have enough energy and there are no additional energy coming in the form of particles, this can cause the simulation to stall for the remaining duration.
 :::
 
 
@@ -287,7 +287,7 @@ raiden skill;
 xingqiu skill, burst;
 ```
 
-After executing `raiden skill`, the simulator will recognize that the next action to be executed require us to be on Xingqiu but Raiden is currently active. It will then automatically insert a swap action before executing `xingqiu skill`;
+After executing `raiden skill`, the simulator will recognize that the next action to be executed requires us to be on Xingqiu but Raiden is currently active. It will then automatically insert a swap action before executing `xingqiu skill`;
 
 You can however manually force swaps with `<char> swap`. Here the `<char>` should represent the character you want to swap to.
 
@@ -321,4 +321,4 @@ gcsl features most of the basic functionality any scripting language has, includ
 - loops
 - conditional statements
 
-For more details, check out the [references section](/reference/config#gcsl)
+For more details, check out the [references section](/reference/config#gcsl).
