@@ -3,14 +3,7 @@ sidebar_position: 1
 title: Config File
 ---
 
-# Config file
-
-The gcsim config file contains all the information necessary for the simulator run a simulation. The config file can be roughly broken down into 3 parts:
-
-- simulator options
-- character data
-- enemy data
-- the script (gcsl) the simulator needs to execute
+# Config File Reference
 
 ## Comments
 
@@ -37,7 +30,7 @@ Following are valid options:
 
 Character data can be roughly broken into 4 parts:
 
-- `<name> char` data such as level, base stats, cons, talents, etc..
+- `<name> char` data such as level, cons, talents, etc..
 - `<name> add weapon=<weapon name>` data such as weapon base stats, refine
 - `<name> add set=<set name>` or artifact data, for set bonuses
 - `<name> add stats` for any character stats

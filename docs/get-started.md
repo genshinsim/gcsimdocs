@@ -4,10 +4,9 @@ sidebar_position: 2
 
 # Getting Started
 
-To get started, simply head over to our website at [https://gcsim.app](https://gcsim.app). As of February 19, 2022, we are transition fully into this new web application and will no longer be offering the desktop application (although older version still available for download).
+To get started, simply head over to our [website](https://gcsim.app)
 
-When you first load the page, you will see these options, which we will discuss below:
-![](gcsim_starting_page.png)
+
 
 ## Simulator
 

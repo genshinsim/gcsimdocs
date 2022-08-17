@@ -9,7 +9,7 @@ The configuration file can be roughly broken into 3 parts:
 
 - character data
 - enemy data
-- rotation data
+- rotation
 
 The config file is read by the sim line by line. Each configuration line **must be terminated** with a `;`. This is so that a single configuration can span multiple lines to allow easier readability.
 
