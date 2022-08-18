@@ -11,10 +11,11 @@ itto,normal,Q-N3,0.1,0.01,TRUE,FALSE
 itto,normal,Q-N4,0.1,0.01,TRUE,FALSE
 itto,charge,Q-CA-SaichimonjiSlash,0.1,0.01,TRUE,FALSE
 itto,charge,Q-CA-AratakiKesagiriFinal,0.1,0.01,TRUE,FALSE
-itto,charge,Q-CA-AratakiKesagiriCombo-1Stack,0.07,0.01,TRUE,FALSE
-itto,charge,Q-CA-AratakiKesagiriCombo-2Stacks,0.05,0.01,TRUE,FALSE
-itto,charge,Q-CA-AratakiKesagiriCombo-3+Stacks,0.03,0.01,TRUE,FALSE
+itto,charge,Q-CA-AratakiKesagiriCombo-FirstCS,0.07,0.01,TRUE,FALSE
+itto,charge,Q-CA-AratakiKesagiriCombo-SecondCS,0.05,0.01,TRUE,FALSE
+itto,charge,Q-CA-AratakiKesagiriCombo-Third+CS,0.03,0.01,TRUE,FALSE
 itto,skill,E-Skill,0.02,0.01,FALSE,TRUE
+barbara,skill,E-MelodyLoop-1.5s-Timer,0.05,0.05,TRUE,TRUE
 beidou,normal,N1,0.09,0.01,TRUE,FALSE
 beidou,normal,N2,0.12,0.01,TRUE,FALSE
 beidou,normal,N3,0.09,0.01,TRUE,FALSE
@@ -85,6 +86,8 @@ ayaka,normal,N1,0.03,0.01,TRUE,FALSE
 ayaka,normal,N2,0.03,0.01,TRUE,FALSE
 ayaka,normal,N3,0.06,0.01,TRUE,FALSE
 ayaka,normal,N4-3,0.03,0.05,TRUE,FALSE
+ayato,cons,C6-Hit1,0.03,0.01,FALSE,TRUE
+ayato,cons,C6-Hit2,0.03,0.01,FALSE,TRUE
 ayato,normal,N1,0.03,0.01,TRUE,FALSE
 ayato,normal,N2,0.03,0.01,TRUE,FALSE
 ayato,normal,N3,0.06,0.01,TRUE,FALSE
