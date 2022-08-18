@@ -45,7 +45,6 @@ character,ability,param,description
 "klee","skill","bounce","number of bounce hits that lands. default 1"
 "klee","skill","mine","number of mines that hits. default 2"
 "klee","skill","release", "if 0 cancel skill cast (4cw, kagura). default 1"
-"klee","skill","walk","if set (any value), attack counter will reset to simulate walk cancel"
 "kokomi","skill","travel","projectile travel time. default 10 frames "
 "lisa","charge","hits","number of targets hit by charge attack. default 1"
 "lisa","skill","hold","default 0 for skill tap. 1 for hold"
