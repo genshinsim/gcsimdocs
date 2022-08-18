@@ -118,15 +118,17 @@ There are no limit on how many lines of `add stats` you can have for each charac
 :::important
 You only need to add artifact stats (i.e the numbers that shows up on each artifact including main stat and sub stats) to each character. Do not add any character/weapon base stats or any other bonuses such as set bonuses. Those are calculated automatically.
 
-Unfortunately, you cannot use the stats from the artifact summary page because it does not break down stats between the percentage and flat amounts. You must add the artifact stats individually from each artifact.
+Unfortunately, you cannot use the Attack from the artifact summary page because it does not break down stats between ATK% and flat ATK. You must add the Attack stats individually from each artifact.
 :::
 
 :::tip
 Contrary to what was stated above, you can use stats from the artifact summary page for simulating your only team **IF AND ONLY IF you do not change the character's weapon**.
 
-To do so, simply add all Attack, Defense, and HP amounts as flat amounts as shown on the artifact summary page.
+To do so, simply add up the Attack shown on the artifact summary page.
 
 However, as soon as you change weapons (causing character base stat to change), you must re-enter everything.
+
+This also applies to DEF and HP if you change the Character's Level.
 :::
 
 
@@ -217,7 +219,7 @@ target lvl=100 resist=0.1 pos=1,0;
 ```
 
 :::important
-Make sure to specify the position of the target when simulating multiple targets, otherwise they will all stack on top of each other at (0, 0), causing certain abilities to hit multiple targets when that's not realistically going to happen.
+Make sure to specify the position of the target when simulating multiple targets, otherwise they will all stack on top of each other at (0, 0), causing certain abilities with very small AoEs (e.g. Yae and Xingqiu) to hit multiple targets when that's not realistically going to happen.
 :::
 
 ## Starting Character
@@ -238,9 +240,27 @@ To execute a swap manually, see [here](#swaps)
 
 ## Energy setting
 
+Optionally, you can add a method of obtaining energy from enemies. The first, and easier way to to simply make energy drop every so often with the below syntax.
 
-Coming soon...
+```
+energy every interval=480,720 amount=1;
+```
 
+`interval` tells the sim how often to drop a particle. In this case, it drops a particles a random number between 8 and 12s after the last time it dropped a particle. (480 and 720 frames respectivele) `amount` tells it to drop one clear particle. 
+
+The second way to HP based drops. When you declare an enemy, you can also tell it to drop energy after it takes a certain amount of damage. 
+
+```
+target lvl=100 resist=0.1 particle_threshold=250000 particle_drop_count=1;
+```
+
+`particle_threshold` tells the sim to drop a particle after the enemy takes 250000 damage while `particle_drop_count` tells it to drop 1 clear particle. 
+
+For reference, a level 100 Maguu Kenki in Abyss would be
+
+```
+target lvl=100 resist=0.1 particle_threshold=460000 particle_drop_count=3;
+```
 
 ## gcsim Script (`gcsl`)
 
