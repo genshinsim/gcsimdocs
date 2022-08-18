@@ -1,11 +1,12 @@
 ---
-sidebar_position: 1
-title: Substat Optimizer Mode
+sidebar_position: 5
+title: Substat Optimizer Guide
 ---
 
 ## Introduction
 
 Substat optimizer mode is a currently **experimental** feature that attempts to optimize your artifact substats given an action list and a few key inputs. This can be useful if:
+
 1. You are doing theorycrafting work and want to align your calculations to a given set of standards
 2. You do not have your artifacts available from another source such as Genshin Optimizer and would like to generate some results with reasonable artifact presets
 
@@ -18,6 +19,7 @@ Note that by default the substat optimizer will assign substats that adhere to t
 Due to difficulties in porting this into the website and performance reasons, the substat optimizer must be operated from the command line. Below we provide a brief guide on basic usage.
 
 Before using the optimizer, you will first need to setup your team in the UI. You will need to set up all elements for a team, so you will need:
+
 1. A team of characters, which each have listed:
    - Level, Constellation, Talent
    - Weapon with level and refine
@@ -30,7 +32,7 @@ Before using the optimizer, you will first need to setup your team in the UI. Yo
 
 Once you have this all set up, then you will want to copy out your full action list, and save it into a file.
 
-Next, you will need to download the latest desktop version of the sim, which you can find [here](https://github.com/genshinsim/gcsim/releases).
+Next, you will need to download the latest desktop version of the sim, which you can find [here](https://github.com/genshinsim/gcsim/releases/latest).
 
 ### TL;DR Just Give Me Something That Works
 
@@ -60,7 +62,9 @@ In the Powershell window, you can run the following command:
 ```
 .\run_optimizer_full.bat "[[NAME OF CONFIG]]"
 ```
+
 Example:
+
 ```
 .\run_optimizer_full.bat "raiden_hyper.txt"
 ```
@@ -121,6 +125,7 @@ options iteration=500 duration=24 mode=sl workers=4;
 ### Additional Options
 
 By default the optimizer will return KQM Standard optimized substats, but if you are interested in doing something different then you can set some semi-colon additional options in the `-options` flag, which are:
+
 1. `total_liquid_substats` (default = 20): Total liquid substats available to be assigned across all substats
 2. `indiv_liquid_cap` (default = 10): Total liquid substats that can be assigned to a single substat
 3. `fixed_substats_count` (default = 2): Amount of fixed substats that are assigned to all substats

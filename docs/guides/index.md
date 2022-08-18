@@ -40,13 +40,17 @@ Get started with gcsim by checking out the following guides
         <div class="row">
         <div class="col col--6 padding--lg">
             <Card
-                title="Sample Configs"
-                text="Check out some sample configs that you can use as a starting point"
-                link="/guides/basic_structure"
+                title="Substat Optimizer Guide"
+                text={`Learn how to use the substat optimizer mode to produce "optimized" substats under KQM standards `}
+                link="/guides/substat_optimizer"
             />
         </div>
         <div class="col col--6 padding--lg">
-        {null}
+            <Card
+                title="Sample Configs"
+                text="Check out some sample configs that you can use as a starting point"
+                link="/guides/sample_configs"
+            />
         </div>
     </div>
 </div>
