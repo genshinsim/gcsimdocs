@@ -12,3 +12,5 @@ fischl,.fischl.oz-source,The source frame Oz is spawned on
 ganyu,.status.ganyuc6,"Returns remain duration of Ganyu's C6 in frames. If Ganyu's C6 is active, returns a value >0"
 ganyu,.mods.<character>.ganyu-field,"Ganyu's A4. If it is active on the declared character, it return 1, 0 otherwise."
 ganyu,.status.ganyuburst,"Returns remaining duration of Ganyu's Burst in frames. If it is active, returns a value >0"
+yae miko,.status.yae_oldest_totem_expiry,"Returns remaining duration of Yae's oldest totem in frames. If any are active, returns a value >0"
+yae miko,.mods.<character>.yaemiko-c4,"Yae's C4. If it is active on the declared character, it return 1, 0 otherwise."
