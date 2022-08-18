@@ -14,3 +14,4 @@ ganyu,.mods.<character>.ganyu-field,"Ganyu's A4. If it is active on the declared
 ganyu,.status.ganyuburst,"Returns remaining duration of Ganyu's Burst in frames. If it is active, returns a value >0"
 yae miko,.status.yae_oldest_totem_expiry,"Returns remaining duration of Yae's oldest totem in frames. If any are active, returns a value >0"
 yae miko,.mods.<character>.yaemiko-c4,"Yae's C4. If it is active on the declared character, it return 1, 0 otherwise."
+zhongli,.tags.zhongli.shielded,"Returns Whether Zhongli's shield is active. If it is, return 1, otherwise return 0"
