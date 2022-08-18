@@ -1,6 +1,14 @@
 character,fields,description
-albedo,.albedo.skill | .albedo.elevator,Evaluates to 1 if skill is currently active
-albedo,.albedo.c2stacks,Current number of C2 stacks
+albedo,.tags.albedo.skill | .tags.albedo.elevator,Evaluates to 1 if skill is currently active
+albedo,.tags.albedo.c2stacks,Current number of C2 stacks
 albedo,.mods.<character>.albedo-a4,Whether or not Albedo A4 buff is active on the specified character
-fischl,.fischl.oz,Remaining frames Oz is active for. 0 if not active.
+eula,.status.eulaq,Remaining Eula Burst duration in frames. Will return 0 if her burst is inactive
+eula,.mods.eula.eula-c1,"Eula's C1. If it is active it return 1, 0 otherwise."
+eula,.mods.eula.grimheart,Returns the number of grimheart stacks
+eula,.mods.eula.eula-grimheart-icd,"Returns whether grimheart is on ICD. If it is return 1, otherwise 0"
+eula,.mods.eula.eula-grimheart-duration,"Returns whether Eula has any grimheart stacks. If there are return 1, otherwise 0"
+fischl,.fischl.oz | .status.fischloz,Remaining frames Oz is active for. 0 if not active.
 fischl,.fischl.oz-source,The source frame Oz is spawned on
+ganyu,.status.ganyuc6,"Returns remain duration of Ganyu's C6 in frames. If Ganyu's C6 is active, returns a value >0"
+ganyu,.mods.<character>.ganyu-field,"Ganyu's A4. If it is active on the declared character, it return 1, 0 otherwise."
+ganyu,.status.ganyuburst,"Returns remaining duration of Ganyu's Burst in frames. If it is active, returns a value >0"
