@@ -12,6 +12,8 @@ ayato,.ayato.mods.ayato-particle-icd,"If Ayato's Particle Generation is on coold
 ayato,.status.ayatoburst,"Returns the remaining duration of Ayato's burst. If it is active, it returns a value >0"
 ayato,.status.soukaikanka,"Returns the remaining duration of Ayato's skill. If it is active, it returns a value >0"
 ayato,.ayato.mods.ayaka-c4,"Ayato's C4. If it is active, it returns 1, 0 otherwise."
+barbara,.<character>.mods.barbara-a1,"Barbara's A1. If it is active, it returns 1, 0 otherwise."
+barbara,.status.barbara-e,Remaining duration of Barbara's skill in frames. Will return >0 if her skill is active
 eula,.status.eulaq,Remaining Eula Burst duration in frames. Will return 0 if her burst is inactive
 eula,.eula.mods.eula-c1,"Eula's C1. If it is active it return 1, 0 otherwise."
 eula,.eula.mods.grimheart,Returns the number of grimheart stacks
