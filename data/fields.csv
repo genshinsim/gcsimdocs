@@ -15,6 +15,8 @@ ayato,.ayato.mods.ayaka-c4,"Ayato's C4. If it is active, it returns 1, 0 otherwi
 barbara,.<character>.mods.barbara-a1,"Barbara's A1. If it is active, it returns 1, 0 otherwise."
 barbara,.status.barbara-e,Remaining duration of Barbara's skill in frames. Will return >0 if her skill is active
 beidou,.status.beidouburst,Remaining duration of Beidou's Burst in frames. Will return >0 if her burst is active
+beidou,.beidou.mods.beidou-a4-dmg,"Returns whether Beidou's A4 DMG% is active. If it is returns 1, otherwise 0"
+beidou,.beidou.mods.beidou-a4-atkspd,"Returns whether Beidou's A4 ATKSPD is active. If it is returns 1, otherwise 0"
 beidou,.beidou.mods.beidou-burst-icd,"Returns whether Beidou's Burst is on ICD. If it is returns 1, otherwise 0"
 bennett,.status.bennettburst,Remaining duration of Bennett's Burst in frames. Will return >0 if his burst is active
 bennett,.<character>.mods.bennett-field,"Returns whether the selected Character has Bennett's buff active on them. 1 if True, 0 if False"
