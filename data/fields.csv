@@ -2,16 +2,17 @@ character,fields,description
 albedo,.albedo.tags.skill | .albedo.tags.elevator,Evaluates to 1 if skill is currently active
 albedo,.albedo.tags.c2stacks,Current number of C2 stacks
 albedo,.<character>.mods.albedo-a4,Whether or not Albedo A4 buff is active on the specified character
+aloy,.aloy.mods.aloy-a1,"Aloy's. If it is active, it returns 1, 0 otherwise."
 eula,.status.eulaq,Remaining Eula Burst duration in frames. Will return 0 if her burst is inactive
 eula,.eula.mods.eula-c1,"Eula's C1. If it is active it return 1, 0 otherwise."
 eula,.eula.mods.grimheart,Returns the number of grimheart stacks
-eula,.eula.mods.eula-grimheart-icd,"Returns whether grimheart is on ICD. If it is return 1, otherwise 0"
-eula,.eula.mods.eula-grimheart-duration,"Returns whether Eula has any grimheart stacks. If there are return 1, otherwise 0"
+eula,.eula.mods.eula-grimheart-icd,"Returns whether grimheart is on ICD. If it is returns 1, otherwise 0"
+eula,.eula.mods.eula-grimheart-duration,"Returns whether Eula has any grimheart stacks. If there are returns 1, otherwise 0"
 fischl,.fischl.oz | .status.fischloz,Remaining frames Oz is active for. 0 if not active.
 fischl,.fischl.oz-source,The source frame Oz is spawned on
 ganyu,.status.ganyuc6,"Returns remain duration of Ganyu's C6 in frames. If Ganyu's C6 is active, returns a value >0"
-ganyu,.<character>.mods.ganyu-field,"Ganyu's A4. If it is active on the declared character, it return 1, 0 otherwise."
+ganyu,.<character>.mods.ganyu-field,"Ganyu's A4. If it is active on the declared character, it returns 1, 0 otherwise."
 ganyu,.status.ganyuburst,"Returns remaining duration of Ganyu's Burst in frames. If it is active, returns a value >0"
 yae miko,.status.yae_oldest_totem_expiry,"Returns remaining duration of Yae's oldest totem in frames. If any are active, returns a value >0"
-yae miko,.<character>.mods.yaemiko-c4,"Yae's C4. If it is active on the declared character, it return 1, 0 otherwise."
-zhongli,.zhongli.tags.shielded,"Returns Whether Zhongli's shield is active. If it is, return 1, otherwise return 0"
+yae miko,.<character>.mods.yaemiko-c4,"Yae's C4. If it is active on the declared character, it returns 1, 0 otherwise."
+zhongli,.zhongli.tags.shielded,"Returns Whether Zhongli's shield is active. If it is, returns 1, otherwise return 0"
