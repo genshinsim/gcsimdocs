@@ -52,7 +52,10 @@ itto,.itto.mods.itto-q,"Returns whether Itto's Burst is active. If it is returns
 itto,.itto.mods.itto-q-atkspd,"Returns whether Itto's ATK SPD buff is active. If it is returns 1, otherwise 0"
 itto,.tags.itto.strStack,Returns number of Itto Superlative Strength Stacks.
 jean,.status.jean-q,Remaining duration of Jean's Burst in frames. Will return 0 if her burst is inactive
-jean,.<character>.mods.jean-c2,"Returns whether Jean's C2 is active on the Selected Character. If it is, it returns 0, otherwise 0"
+jean,.<character>.mods.jean-c2,"Returns whether Jean's C2 is active on the Selected Character. If it is, it returns 1, otherwise 0"
+kazuha,.kazuha.mods.kazuha-c6,"Returns whether Kazuha's C6 is active. If it is, it returns 1, otherwise 0"
+kazuha,.<character>.mods.kazuha-a4-<element>,"Returns whether Kazuha's A4 of the selected element is active on the Character. If it is, it returns 1, otherwise 0"
+kazuha,.<character>.mods.kazuha-c2,"Returns whether Kazuha's C2 is active on the Character. If it is, it returns 1, otherwise 0"
 yae miko,.status.yae_oldest_totem_expiry,"Returns remaining duration of Yae's oldest totem in frames. If any are active, returns a value >0"
 yae miko,.<character>.mods.yaemiko-c4,"Yae's C4. If it is active on the declared character, it returns 1, 0 otherwise."
 zhongli,.zhongli.tags.shielded,"Returns Whether Zhongli's shield is active. If it is, returns 1, otherwise return 0"
