@@ -19,14 +19,14 @@ beidou,.status.beidouburst,Remaining duration of Beidou's Burst in frames. Will 
 beidou,.beidou.mods.beidou-a4-dmg,"Returns whether Beidou's A4 DMG% is active. If it is returns 1, otherwise 0"
 beidou,.beidou.mods.beidou-a4-atkspd,"Returns whether Beidou's A4 ATKSPD is active. If it is returns 1, otherwise 0"
 beidou,.beidou.mods.beidou-burst-icd,"Returns whether Beidou's Burst is on ICD. If it is returns 1, otherwise 0"
-beidou,.debuff.def.<target>.beidouc6,"Returns whether Beidou's C6 is active on the selected enemy. If it is, it returns 1, otherwise 0"
+beidou,.debuff.res.<target>.beidouc6,"Returns whether Beidou's C6 is active on the selected enemy. If it is, it returns 1, otherwise 0"
 bennett,.status.bennettburst,Remaining duration of Bennett's Burst in frames. Will return >0 if his burst is active
 bennett,.<character>.mods.bennett-field,"Returns whether the selected Character has Bennett's buff active on them. 1 if True, 0 if False"
 chongyun,.status.chongyunfield,Remaining duration of Chongyun's skill in frames. Will return >0 if his skill is active
 chongyun,.<character>.mods.chongyun-c2,"Chongyun's C2. If it is active on the selected character, it returns 1, 0 otherwise."
 chongyun,.<character>.mods.chongyun-field,"Returns whether the selected Character has Chongyun's buff active on them. 1 if True, 0 if False"
 chongyun,.chongyun.mods.chongyun-c4-icd,"Returns whether Chongyun's C4 is on ICD. If it is returns 1, otherwise 0"
-chongyun,.debuff.def.<target>.chongyun-a4,"Returns whether Chongyun's A4 is active on the selected enemy. If it is, it returns 1, otherwise 0"
+chongyun,.debuff.res.<target>.chongyun-a4,"Returns whether Chongyun's A4 is active on the selected enemy. If it is, it returns 1, otherwise 0"
 diluc,.diluc.mods.diluc-c4,"Diluc's C4. If it is active, it returns 1, 0 otherwise."
 diluc,.diluc.mods.diluc-q,"Returns whether Diluc's Burst is active. If it is returns 1, otherwise 0"
 diona,.status.diona-q,Remaining duration of Diona's Burst in frames. Will return >0 if her burst is active
@@ -36,14 +36,14 @@ eula,.eula.mods.eula-c1,"Eula's C1. If it is active it return 1, 0 otherwise."
 eula,.eula.mods.grimheart,Returns the number of grimheart stacks
 eula,.eula.mods.eula-grimheart-icd,"Returns whether grimheart is on ICD. If it is returns 1, otherwise 0"
 eula,.eula.mods.eula-grimheart-duration,"Returns whether Eula has any grimheart stacks. If there are returns 1, otherwise 0"
-eula,.debuff.def.<target>.eula-icewhirl-shred-cryo,"Returns whether Eula's CRYO RES Shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
-eula,.debuff.def.<target>.eula-icewhirl-shred-cryo,"Returns whether Eula's PHYS RES Shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
-fischl,.fischl.oz,Remaining frames Oz is active for. 0 if not active.
+eula,.debuff.res.<target>.eula-icewhirl-shred-cryo,"Returns whether Eula's CRYO RES Shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
+eula,.debuff.res.target>.eula-icewhirl-shred-cryo,"Returns whether Eula's PHYS RES Shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
+fischl,.fischl.oz,"Returns whether Oz is active. Returns 1 if he is, 0 if he isn't"
 fischl,.fischl.oz-source,The source frame Oz is spawned on
 ganyu,.status.ganyuc6,"Returns remain duration of Ganyu's C6 in frames. If Ganyu's C6 is active, returns a value >0"
 ganyu,.<character>.mods.ganyu-field,"Ganyu's A4. If it is active on the declared character, it returns 1, 0 otherwise."
 ganyu,.status.ganyuburst,"Returns remaining duration of Ganyu's Burst in frames. If it is active, returns a value >0"
-ganyu,.debuff.def.<target>.ganyu-c1,"Returns whether Ganyu's C1 RES Shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
+ganyu,.debuff.res.<target>.ganyu-c1,"Returns whether Ganyu's C1 RES Shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
 gorou,.status.gorou-q-glory,"Returns remaining duration of Gorou's Burst in frames. If it is active, returns a value >0"
 gorou,.status.gorou-e-warbanner,"Returns remaining duration of Gorou's Skill in frames. If it is active, returns a value >0"
 gorou,.<character>.mods.gorou-c6,"Returns whether the selected Character has Gorou's C6 buff active on them. 1 if True, 0 if False"
@@ -59,7 +59,7 @@ itto,.itto.mods.itto-q-atkspd,"Returns whether Itto's ATK SPD buff is active. If
 itto,.tags.itto.strStack,Returns number of Itto Superlative Strength Stacks.
 jean,.status.jean-q,Remaining duration of Jean's Burst in frames. Will return 0 if her burst is inactive
 jean,.<character>.mods.jean-c2,"Returns whether Jean's C2 is active on the Selected Character. If it is, it returns 1, otherwise 0"
-jean,.debuff.def.<target>.jean-c4,"Returns whether Jean's C4 RES Shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
+jean,.debuff.res.<target>.jean-c4,"Returns whether Jean's C4 RES Shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
 kazuha,.kazuha.mods.kazuha-c6,"Returns whether Kazuha's C6 is active. If it is, it returns 1, otherwise 0"
 kazuha,.<character>.mods.kazuha-a4-<element>,"Returns whether Kazuha's A4 of the selected element is active on the Character. If it is, it returns 1, otherwise 0"
 kazuha,.<character>.mods.kazuha-c2,"Returns whether Kazuha's C2 is active on the Character. If it is, it returns 1, otherwise 0"
@@ -72,6 +72,7 @@ keqing,.keqing.mods.keqing-c2-icd,"Returns whether Keqing's C2 is on cooldown. I
 klee,.status.kleespark,"Returns remaining duration of Klee's A1. If it active, it returns a value >0"
 klee,.status.kleeq,"Returns remaining duration of Klee's Burst. If it active, it returns a value >0"
 klee,.<character>.mods.klee-c6,"Returns whether Klee's C6 is active on the Selected Character. If it is, it returns 1, otherwise 0"
+klee,.debuff.def.<target>.kleec2,"Returns whether Klee's C2 is active on the selected enemy. If it is, it returns 1, otherwise 0"
 kokomi,.status.kokomiskill,"Returns remaining duration of Kokomi's Jellyfish. If it active, it returns a value >0"
 kokomi,.status.kokomiburst,"Returns remaining duration of Kokomi's Burst. If it active, it returns a value >0"
 kokomi,.kokomi.mods.kokomi-c4,"Returns whether Kokomi's C4 is active. If it is, it returns 1, otherwise 0"
