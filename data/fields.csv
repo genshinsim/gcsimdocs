@@ -84,6 +84,8 @@ lisa,.status.lisaburst,"Returns remaining duration of Lisa's Burst in frames. If
 lisa,.debuff.def.<target>.lisa-a4,"Returns whether Lisa's A4 is active on the selected enemy. If it is, it returns 1, otherwise 0"
 mona,.status.<target>.mona-bubble,Whether the Target has Mona's Burst bubble on them. Currently unsupported
 mona,.status.<target>.omen-debuff,Whether the Target has Mona's omen debuff on them. Currently unsupported
+ningguang,.ningguang.mods.ningguang-particle-icd,Returns whether Ningguang's Particle generation is on cooldown. Returns a 1 if it is.
+ningguang,.tags.ningguang.jades,Returns the number of Jades ningguang has
 yae miko,.status.yae_oldest_totem_expiry,"Returns remaining duration of Yae's oldest totem in frames. If any are active, returns a value >0"
 yae miko,.<character>.mods.yaemiko-c4,"Yae's C4. If it is active on the declared character, it returns 1, 0 otherwise."
 zhongli,.zhongli.tags.shielded,"Returns Whether Zhongli's shield is active. If it is, returns 1, otherwise return 0"
