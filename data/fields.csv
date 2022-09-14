@@ -143,6 +143,10 @@ xiangling,.<character>.mods.xiangling-c6,"Returns whether Xiangling's C6 is acti
 xiao,.xiao.tags.eCharge,Returns the number of skill charges Xiao has.
 xiao,.xiao.mods.xiao-a4,"Returns whether Xiao's A4 is active. If it is, it returns a 1, otherwise 0"
 xiao,.xiao.mods.xiaoburst,"Returns whether Xiao's A4 is active. If it is, it returns a 1, otherwise 0"
+xingqiu,.xingqiu.mods.xingqiuorbitals,"Returns whether Xingqiu's Orbitals are active. If they are, it returns a 1, otherwise 0"
+xingqiu,.xingqiu.mods.xingqiuburst,"Returns whether Xingqiu's Burst are active. If they are, it returns a 1, otherwise 0"
+xingqiu,.xingqiu.mods.xingqiu-burst-icd,"Returns whether Xingqiu's Burst waves are on cooldown. If they are, it returns a 1, otherwise 0"
+xingqiu,.debuff.res.<target>.xingqiu-c2,"Returns whether Xingqiu's Hydro RES shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
 yae miko,.status.yae_oldest_totem_expiry,"Returns remaining duration of Yae's oldest totem in frames. If any are active, returns a value >0"
 yae miko,.<character>.mods.yaemiko-c4,"Yae's C4. If it is active on the declared character, it returns 1, 0 otherwise."
 zhongli,.zhongli.tags.shielded,"Returns Whether Zhongli's shield is active. If it is, returns 1, otherwise return 0"
