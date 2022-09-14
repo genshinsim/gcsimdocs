@@ -159,4 +159,13 @@ yelan,.<character>.mods.yelan-c4,"Returns whether Yelan's C4 is active on the se
 yelan,.status.yelan_c6,Returns the remaining duration of Yelan's C6 in frames
 yelan,.status.yelanburst,Returns the remaining duration of yelan burst in frames
 yelan,.yelan.tags.breakthrough_barb,"Return whether Yelan's Breakthrough Barb is available. If it is, returns a 1, otherwise 0"
+yoimiya,.yoimiya.mods.yoimiyaskill,"Returns whether Yoimiya's skill is active. If it is, 1 otherwise 0"
+yoimiya,.yoimiya.mods.yoimiyaa1,"Returns whether Yoimiya's A1 is active. If it is, 1 otherwise 0"
+yoimiya,.yoimiya.mods.yoimiya-c2,"Returns whether Yoimiya's C2 is active. If it is, 1 otherwise 0"
+yoimiya,.<character>.mods.yoimiya-a4,"Returns whether Yoimiya's A4 is active on the selected character. If it is, 1 otherwise 0"
+yunjin,.yunjin.mods.yunjin-c4,"Returns whether Yunjin's C4 is active. If it is, 1 otherwise 0"
+yunjin,.<character>.mods.yunjin-q,"Returns whether Yunjin's Elemental Burst is active on the selected character. If it is, 1 otherwise 0"
+yunjin,.<character>.mods.yunjin-c2,"Returns whether Yunjin's C2 is active on the selected character. If it is, 1 otherwise 0"
+yunjin,.<character>.mods.yunjin-c6,"Returns whether Yunjin's C6 is active on the selected character. If it is, 1 otherwise 0"
+yunjin,.yunjin.tags.burststacks_<character>,Returns the number of burst stacks the selected character has
 zhongli,.zhongli.tags.shielded,"Returns Whether Zhongli's shield is active. If it is, returns 1, otherwise return 0"
