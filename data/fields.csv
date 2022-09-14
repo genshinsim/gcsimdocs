@@ -152,4 +152,11 @@ xinyan,.xinyan.mods.xinyan-c1,"Returns whether Xinyan's C1 is active. If it is, 
 xinyan,.xinyan.mods.xinyan-c1-icd,"Returns whether Xinyan's C1 is on cooldown. If it is, it returns a 1, otherwise 0"
 yae miko,.status.yae_oldest_totem_expiry,"Returns remaining duration of Yae's oldest totem in frames. If any are active, returns a value >0"
 yae miko,.<character>.mods.yaemiko-c4,"Yae's C4. If it is active on the declared character, it returns 1, 0 otherwise."
+yanfei,.yanfei.mods.yanfei-seal,"Returns whether Yanfei has a seal stack. If she does, returns a 1, otherwise 0"
+yanfei,.yanfei.tags.seals,Returns the number if seals Yanfei has
+yanfei,.yanfei.mods.yanfei-q,"Returns whether Yanfei's Elemental Burst is active, if it is, returns a 1, otherwise 0"
+yelan,.<character>.mods.yelan-c4,"Returns whether Yelan's C4 is active on the selected character. If it is, returns a 1, otherwise 0"
+yelan,.status.yelan_c6,Returns the remaining duration of Yelan's C6 in frames
+yelan,.status.yelanburst,Returns the remaining duration of yelan burst in frames
+yelan,.yelan.tags.breakthrough_barb,"Return whether Yelan's Breakthrough Barb is available. If it is, returns a 1, otherwise 0"
 zhongli,.zhongli.tags.shielded,"Returns Whether Zhongli's shield is active. If it is, returns 1, otherwise return 0"
