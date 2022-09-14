@@ -127,6 +127,11 @@ sucrose,.sucrose.tags.eCharge,Returens the number of skill charges Sucrose has.
 tartaglia,.tartaglia.mods.tartagliamelee,"Returns whether Tartaglia is in melee stance. Returns a 1 if true, 0 otherwise"
 tartaglia,.tartaglia.mods.riptide-energy-icd,"Returns whether Tartaglia's particle generation is on cooldown. Returns a 1 if true, 0 otherwise"
 tartaglia,.status.<target>.riptide-slash-icd,Whether the Target has Riptide's cooldown on them. Currently unsupported
+thoma,.<character>.mods.thoma-c6,"Returns whether Thoma's A4 is active on the selected character. Returns a 1 if true, 0 otherwise"
+thoma,.thoma.mods.thoma-a1-icd,"Returns whether Thoma's A1 is cooldown. Returns a 1 if true, 0 otherwise"
+thoma,.thoma.mods.thoma-a1,"Returns whether Thoma's A1 is active. Returns a 1 if true, 0 otherwise"
+thoma,.thoma.mods.thoma-q-icd,"Returns whether Thoma's Fiery Collapse is on cooldown. Returns a 1 if true, 0 otherwise"
+thoma,.thoma.mods.thoma-q,"Returns whether Thoma's Elemental burst is active. Returns a 1 if true, 0 otherwise"
 venti,.venti.mods.venti-c4,"Returns whether Venti's C4 is active. If it is, it returns a 1, otherwise 0"
 venti,.debuff.res.<target>.venti-c2-anemo,"Returns whether Venti's C2 Anemo RES shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
 venti,.debuff.res.<target>.venti-c2-phys,"Returns whether Venti's C2 Phys RES shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
