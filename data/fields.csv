@@ -140,6 +140,9 @@ xiangling,.status.xianglingguoba,Returns remaining duration of Guoba.
 xiangling,.debuff.res.<target>.xiangling-c1,"Returns whether Xiangling's Pyro RES shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
 xiangling,.status.xianglingburst,Returns remaining duration of Xiangling's Elemental Burst
 xiangling,.<character>.mods.xiangling-c6,"Returns whether Xiangling's C6 is active on the selected character. If it is return a 1, otherwise 0"
+xiao,.xiao.tags.eCharge,Returns the number of skill charges Xiao has.
+xiao,.xiao.mods.xiao-a4,"Returns whether Xiao's A4 is active. If it is, it returns a 1, otherwise 0"
+xiao,.xiao.mods.xiaoburst,"Returns whether Xiao's A4 is active. If it is, it returns a 1, otherwise 0"
 yae miko,.status.yae_oldest_totem_expiry,"Returns remaining duration of Yae's oldest totem in frames. If any are active, returns a value >0"
 yae miko,.<character>.mods.yaemiko-c4,"Yae's C4. If it is active on the declared character, it returns 1, 0 otherwise."
 zhongli,.zhongli.tags.shielded,"Returns Whether Zhongli's shield is active. If it is, returns 1, otherwise return 0"
