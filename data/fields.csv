@@ -93,6 +93,11 @@ qiqi,.qiqi.mods.qiqi-e,Returns whether Qiqi's Elemental skill is active. Returns
 raiden,.<character>.mods.raiden-e,"If Raiden's Elemental Burst Damage Bonus is active on the declared character, it returns 1, 0 otherwise."
 raiden,.raiden.mods.raidenburst,Returns whether Raiden's Elemental burst is active. Returns a 1 if it is.
 raiden,.<character>.mods.raiden-c4,"Returns whether Raiden's C4 is active on the Selected Character. If it is, it returns 1, otherwise 0"
+razor,.razor.mods.razor-c6-icd,"Returns whether Razor's C6 is on cooldown. If it is, returns 1, 0 otherwise"
+razor,.razor.mods.razor-sigil-duration,"Returns whether Razor has a sigil of his C6. If he has, returns 1, 0 otherwisse"
+razor,.debuff.def.<target>.lisa-c4,"Returns whether Razor's C4 is active on the selected enemy. If it is, it returns 1, otherwise 0"
+razor,.razor.mods.razor-q,Returns whether Razor's Elemental burst is active. Returns a 1 if it is.
+razor,.razor.mods.razor-c1,"Returns whether Razor's C1. If he has, returns 1, 0 otherwisse"
 yae miko,.status.yae_oldest_totem_expiry,"Returns remaining duration of Yae's oldest totem in frames. If any are active, returns a value >0"
 yae miko,.<character>.mods.yaemiko-c4,"Yae's C4. If it is active on the declared character, it returns 1, 0 otherwise."
 zhongli,.zhongli.tags.shielded,"Returns Whether Zhongli's shield is active. If it is, returns 1, otherwise return 0"
