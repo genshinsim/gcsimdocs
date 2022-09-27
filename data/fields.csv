@@ -1,6 +1,171 @@
 character,fields,description
 albedo,.albedo.skill | .albedo.elevator,Evaluates to 1 if skill is currently active
-albedo,.albedo.c2stacks,Current number of C2 stacks
-albedo,.mods.<character>.albedo-a4,Whether or not Albedo A4 buff is active on the specified character
-fischl,.fischl.oz,Remaining frames Oz is active for. 0 if not active.
+albedo,.albedo.tags.c2stacks,Current number of C2 stacks
+albedo,.<character>.mods.albedo-a4,Whether or not Albedo A4 buff is active on the specified character
+aloy,.aloy.mods.aloy-a1,"Aloy's A1. If it is active, it returns 1, 0 otherwise."
+amber,.<character>.mods.amber-c6,"Ambers C6. If it is active, it returns 1, 0 otherwise."
+ayaka,.ayaka.mods.ayaka-a1,"Ayaka's A1. If it is active, it returns 1, 0 otherwise."
+ayaka,.ayaka.mods.ayaka-a4,"Ayaka's A4. If it is active, it returns 1, 0 otherwise."
+ayaka,.ayaka.mods.ayaka-c1-icd,"Returns whether Ayaka's C1 is on ICD. If it is returns 1, otherwise 0"
+ayaka,.status.ayaka-c6,"Ayaka's C6. If it is active, it returns 1, 0 otherwise."
+ayaka,.debuff.def.<target>.ayaka-c4,"Returns whether Ayaka's C4 is active on the selected enemy. If it is, it returns 1, otherwise 0"
+ayato,.ayato.mods.ayato-particle-icd,"If Ayato's Particle Generation is on cooldown, this will return 1, otherwise 0"
+ayato,.status.ayatoburst,"Returns the remaining duration of Ayato's burst. If it is active, it returns a value >0"
+ayato,.status.soukaikanka,"Returns the remaining duration of Ayato's skill. If it is active, it returns a value >0"
+ayato,.ayato.mods.ayaka-c4,"Ayato's C4. If it is active, it returns 1, 0 otherwise."
+barbara,.<character>.mods.barbara-a1,"Barbara's A1. If it is active, it returns 1, 0 otherwise."
+barbara,.status.barbara-e,Remaining duration of Barbara's skill in frames. Will return >0 if her skill is active
+beidou,.status.beidouburst,Remaining duration of Beidou's Burst in frames. Will return >0 if her burst is active
+beidou,.beidou.mods.beidou-a4-dmg,"Returns whether Beidou's A4 DMG% is active. If it is returns 1, otherwise 0"
+beidou,.beidou.mods.beidou-a4-atkspd,"Returns whether Beidou's A4 ATKSPD is active. If it is returns 1, otherwise 0"
+beidou,.beidou.mods.beidou-burst-icd,"Returns whether Beidou's Burst is on ICD. If it is returns 1, otherwise 0"
+beidou,.debuff.res.<target>.beidouc6,"Returns whether Beidou's C6 is active on the selected enemy. If it is, it returns 1, otherwise 0"
+bennett,.status.bennettburst,Remaining duration of Bennett's Burst in frames. Will return >0 if his burst is active
+bennett,.<character>.mods.bennett-field,"Returns whether the selected Character has Bennett's buff active on them. 1 if True, 0 if False"
+chongyun,.status.chongyunfield,Remaining duration of Chongyun's skill in frames. Will return >0 if his skill is active
+chongyun,.<character>.mods.chongyun-c2,"Chongyun's C2. If it is active on the selected character, it returns 1, 0 otherwise."
+chongyun,.<character>.mods.chongyun-field,"Returns whether the selected Character has Chongyun's buff active on them. 1 if True, 0 if False"
+chongyun,.chongyun.mods.chongyun-c4-icd,"Returns whether Chongyun's C4 is on ICD. If it is returns 1, otherwise 0"
+chongyun,.debuff.res.<target>.chongyun-a4,"Returns whether Chongyun's A4 is active on the selected enemy. If it is, it returns 1, otherwise 0"
+diluc,.diluc.mods.diluc-c4,"Diluc's C4. If it is active, it returns 1, 0 otherwise."
+diluc,.diluc.mods.diluc-q,"Returns whether Diluc's Burst is active. If it is returns 1, otherwise 0"
+diona,.status.diona-q,Remaining duration of Diona's Burst in frames. Will return >0 if her burst is active
+diona,.<character>.mods.diona-c6,"Returns whether the selected Character has Diona's C6 buff active on them. 1 if True, 0 if False"
+eula,.status.eulaq,Remaining Eula Burst duration in frames. Will return 0 if her burst is inactive
+eula,.eula.mods.eula-c1,"Eula's C1. If it is active it return 1, 0 otherwise."
+eula,.eula.mods.grimheart,Returns the number of grimheart stacks
+eula,.eula.mods.eula-grimheart-icd,"Returns whether grimheart is on ICD. If it is returns 1, otherwise 0"
+eula,.eula.mods.eula-grimheart-duration,"Returns whether Eula has any grimheart stacks. If there are returns 1, otherwise 0"
+eula,.debuff.res.<target>.eula-icewhirl-shred-cryo,"Returns whether Eula's CRYO RES Shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
+eula,.debuff.res.target>.eula-icewhirl-shred-cryo,"Returns whether Eula's PHYS RES Shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
+fischl,.fischl.oz,"Returns whether Oz is active. Returns 1 if he is, 0 if he isn't"
 fischl,.fischl.oz-source,The source frame Oz is spawned on
+ganyu,.status.ganyuc6,"Returns remain duration of Ganyu's C6 in frames. If Ganyu's C6 is active, returns a value >0"
+ganyu,.<character>.mods.ganyu-field,"Ganyu's A4. If it is active on the declared character, it returns 1, 0 otherwise."
+ganyu,.status.ganyuburst,"Returns remaining duration of Ganyu's Burst in frames. If it is active, returns a value >0"
+ganyu,.debuff.res.<target>.ganyu-c1,"Returns whether Ganyu's C1 RES Shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
+gorou,.status.gorou-q-glory,"Returns remaining duration of Gorou's Burst in frames. If it is active, returns a value >0"
+gorou,.status.gorou-e-warbanner,"Returns remaining duration of Gorou's Skill in frames. If it is active, returns a value >0"
+gorou,.<character>.mods.gorou-c6,"Returns whether the selected Character has Gorou's C6 buff active on them. 1 if True, 0 if False"
+gorou,.<character>.mods.gorou-a1,"Returns whether the selected Character has Gorou's A1 buff active on them. 1 if True, 0 if False"
+gorou,.<character>.mods.gorou-e-defbuff,"Returns whether the selected Character has Gorou's skill/burst buff active on them. 1 if True, 0 if False"
+hutao,.hutao.mods.paramita,"Returns whether Hu Tao is in her Elemental Skill. 1 if it is active, 0 otherwise"
+hutao,.hutao.mods.paramita-ball-icd,"Returns whether Hu Tao's Elemental Skill Particle Generation is on Cooldown, if it is return 1, otherwise 0"
+hutao,.<character>.mods.hutao-a1,"Hu Tao's A1. If it is active on the selected character, it returns 1, 0 otherwise."
+hutao,.hutao.mods.hutao-c6,"Hu Tao's C6. If it is active, it returns 1, 0 otherwise."
+hutao,.hutao.mods.hutao-c6-icd,"Returns whether Hu Tao's C6 is on cooldown. If it is it returns 1, 0 otherwise"
+itto,.itto.mods.itto-q,"Returns whether Itto's Burst is active. If it is returns 1, otherwise 0"
+itto,.itto.mods.itto-q-atkspd,"Returns whether Itto's ATK SPD buff is active. If it is returns 1, otherwise 0"
+itto,.tags.itto.strStack,Returns number of Itto Superlative Strength Stacks.
+jean,.status.jean-q,Remaining duration of Jean's Burst in frames. Will return 0 if her burst is inactive
+jean,.<character>.mods.jean-c2,"Returns whether Jean's C2 is active on the Selected Character. If it is, it returns 1, otherwise 0"
+jean,.debuff.res.<target>.jean-c4,"Returns whether Jean's C4 RES Shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
+kazuha,.kazuha.mods.kazuha-c6,"Returns whether Kazuha's C6 is active. If it is, it returns 1, otherwise 0"
+kazuha,.<character>.mods.kazuha-a4-<element>,"Returns whether Kazuha's A4 of the selected element is active on the Character. If it is, it returns 1, otherwise 0"
+kazuha,.<character>.mods.kazuha-c2,"Returns whether Kazuha's C2 is active on the Character. If it is, it returns 1, otherwise 0"
+keqing,.keqing.mods.keqing-c6-attack,"Returns whether Keqing's C6 is active. If it is, it returns 1, otherwise 0"
+keqing,.keqing.mods.keqing-c6,"Returns whether Keqing's C4 is active. If it is, it returns 1, otherwise 0"
+keqing,.status.keqingstilleto,"Returns remaining duration of Keqing's Stilleto. If it active, it returns a value >0"
+keqing,.status.keqinginfusion,"Returns remaining duration of Keqing's Electro Infusion. If it active, it returns a value >0"
+keqing,.keqing.mods.keqing-a4,"Returns whether Keqing's A4 is active. If it is, it returns 1, otherwise 0"
+keqing,.keqing.mods.keqing-c2-icd,"Returns whether Keqing's C2 is on cooldown. If it is, it returns 1, otherwise 0"
+klee,.status.kleespark,"Returns remaining duration of Klee's A1. If it active, it returns a value >0"
+klee,.status.kleeq,"Returns remaining duration of Klee's Burst. If it active, it returns a value >0"
+klee,.<character>.mods.klee-c6,"Returns whether Klee's C6 is active on the Selected Character. If it is, it returns 1, otherwise 0"
+klee,.debuff.def.<target>.kleec2,"Returns whether Klee's C2 is active on the selected enemy. If it is, it returns 1, otherwise 0"
+kokomi,.status.kokomiskill,"Returns remaining duration of Kokomi's Jellyfish. If it active, it returns a value >0"
+kokomi,.status.kokomiburst,"Returns remaining duration of Kokomi's Burst. If it active, it returns a value >0"
+kokomi,.kokomi.mods.kokomi-c4,"Returns whether Kokomi's C4 is active. If it is, it returns 1, otherwise 0"
+kokomi,.kokomi.mods.kokomi-c6,"Returns whether Kokomi's C6 is active. If it is, it returns 1, otherwise 0"
+kuki,.status.kuki-e,"Returns remaining duration of Kuki Shinobu's Sjukk. If it active, it returns a value >0"
+kuki,.kuki.mods.kuki-c4-icd,"Returns whether Kuki Shinobu's C4 is on cooldown. If it is, it returns 1, otherwise 0"
+lisa,.lisa.mods.lisa-c2,"Returns whether Lisa's C2 is active. If it is, it returns 1, otherwise 0"
+lisa,.status.lisaburst,"Returns remaining duration of Lisa's Burst in frames. If it is active, returns a value >0"
+lisa,.debuff.def.<target>.lisa-a4,"Returns whether Lisa's A4 is active on the selected enemy. If it is, it returns 1, otherwise 0"
+mona,.status.<target>.mona-bubble,Whether the Target has Mona's Burst bubble on them. Currently unsupported
+mona,.status.<target>.omen-debuff,Whether the Target has Mona's omen debuff on them. Currently unsupported
+ningguang,.ningguang.mods.ningguang-particle-icd,Returns whether Ningguang's Particle generation is on cooldown. Returns a 1 if it is.
+ningguang,.tags.ningguang.jades,Returns the number of Jades ningguang has
+noelle,.noelle.mods.noelle-burst,"Returns whether Noelle's burst is active. Returns 1 if true, otherwise 0"
+qiqi,.status.<target>.qiqi-talisman,Whether the Target has Qiqi's Burst talisman on them. Currently unsupported
+qiqi,.qiqi.mods.qiqi-a4-icd,Returns whether Qiqi's A4 is on cooldown. Returns a 1 if it is.
+qiqi,.qiqi.mods.qiqi-e,Returns whether Qiqi's Elemental skill is active. Returns a 1 if it is.
+raiden,.<character>.mods.raiden-e,"If Raiden's Elemental Burst Damage Bonus is active on the declared character, it returns 1, 0 otherwise."
+raiden,.raiden.mods.raidenburst,Returns whether Raiden's Elemental burst is active. Returns a 1 if it is.
+raiden,.<character>.mods.raiden-c4,"Returns whether Raiden's C4 is active on the Selected Character. If it is, it returns 1, otherwise 0"
+razor,.razor.mods.razor-c6-icd,"Returns whether Razor's C6 is on cooldown. If it is, returns 1, 0 otherwise"
+razor,.razor.mods.razor-sigil-duration,"Returns whether Razor has a sigil of his C6. If he has, returns 1, 0 otherwisse"
+razor,.debuff.def.<target>.razor-c4,"Returns whether Razor's C4 is active on the selected enemy. If it is, it returns 1, otherwise 0"
+razor,.razor.mods.razor-q,Returns whether Razor's Elemental burst is active. Returns a 1 if it is.
+razor,.razor.mods.razor-c1,"Returns whether Razor's C1 is active. If it is, returns 1, 0 otherwisse"
+rosaria,.rosaria.mods.rosaria-a1,"Returns whether Rosaria's A1 is active. If it is, returns 1, 0 otherwisse"
+rosaria,.rosaria.mods.rosaria-c1,"Returns whether Rosaria's C1 is active. If it is, returns 1, 0 otherwisse"
+rosaria,.status.rosariaburst,"Returns remaining duration of Rosaria's Burst. If it active, it returns a value >0"
+rosaria,.debuff.res.<target>.rosaria-c6,"Returns whether Rosaria's C6 is active on the selected enemy. If it is, it returns 1, otherwise 0"
+rosaria,.<character>.mods.rosaria-a4,"Returns whether Rosaria's A1 is active on the selected character. If it is, returns 1, 0 otherwise"
+sara,.status.sara-e-cover,Returns the remaing duration of Sara's E. If it is active it returns a value >0
+sara,.<character>.mods.sarabuff,"Returns whether the selected chacater has Sara's Buff on them. If they do, returns a 1, otherwise 0"
+sara,.<character>.mods.sara-attack-buff,"Returns whether the selected chacater has Sara's Attack Buff on them. If they do, returns a 1, otherwise 0"
+sara,.<character>.mods.sara-c6,"Returns whether the selected chacater has Sara's C6 on them. If they do, returns a 1, otherwise 0"
+sara,.sara.mods.sara-c1-icd,"Returns whether Sara's C1 is on cooldown. If it is, it returns a 1, otherwise 0"
+sara,.sara.mods.sara-a4-icd,"Returns whether Sara's A4 is on cooldown. If it is, it returns a 1, otherwise 0"
+sayu,.sayu.mods.sayu-a1-icd,"Returns whether Sayu's A1 is on cooldown, if it is it returns a 1, otherwise 0"
+shenhe,.<character>.mods.shenhe-quill,"Returns whether the selected character has any of Shenhe's Icy Quills. If they do return a 1, otherwise 0"
+shenhe,.shenhe.tags.quills_<character>,Returns the number of quills the selected character has
+shenhe,.<character>.mods.shenhe-a4-press,"Returns whether Shenhe's press A4 is active on the selected character. If it is return a 1, otherwise 0"
+shenhe,.<character>.mods.shenhe-a4-hold,"Returns whether Shenhe's hold A4 is active on the selected character. If it is return a 1, otherwise 0"
+shenhe,.shenhe.mods.shenheburst,"Returns whether Shenhe's Burst is active. If it is, returns a 1, otherwise 0"
+shenhe,.shenhe.mods.shenhe-c4,"Returns whether Shenhe's C4 has any stacks. If it does, returns a 1, otherwise 0"
+shenhe,.<character>.mods.shenhe-a1,"Returns whether Shenhe's A1 is active on the selected character. If it is return a 1, otherwise 0"
+shenhe,.<character>.mods.shenhe-c2,"Returns whether Shenhe's c2 is active on the selected character. If it is return a 1, otherwise 0"
+shenhe,.debuff.res.<target>.shenhe-burst-shred-cryo,"Returns whether Shenhe's Cryo RES shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
+shenhe,.debuff.res.<target>.shenhe-burst-shred-phys,"Returns whether Shenhe's PHys RES shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
+sucrose,.<character>.mods.sucrose-a1,"Returns whether Sucrose's A1 is active on the selected character. If it is return a 1, otherwise 0"
+sucrose,.<character>.mods.sucrose-a4,"Returns whether Sucrose's A4 is active on the selected character. If it is return a 1, otherwise 0"
+sucrose,.<character>.mods.sucrose-c6,"Returns whether Sucrose's C6 is active on the selected character. If it is return a 1, otherwise 0"
+sucrose,.sucrose.tags.eCharge,Returens the number of skill charges Sucrose has.
+tartaglia,.tartaglia.mods.tartagliamelee,"Returns whether Tartaglia is in melee stance. Returns a 1 if true, 0 otherwise"
+tartaglia,.tartaglia.mods.riptide-energy-icd,"Returns whether Tartaglia's particle generation is on cooldown. Returns a 1 if true, 0 otherwise"
+tartaglia,.status.<target>.riptide-slash-icd,Whether the Target has Riptide's cooldown on them. Currently unsupported
+thoma,.<character>.mods.thoma-c6,"Returns whether Thoma's A4 is active on the selected character. Returns a 1 if true, 0 otherwise"
+thoma,.thoma.mods.thoma-a1-icd,"Returns whether Thoma's A1 is cooldown. Returns a 1 if true, 0 otherwise"
+thoma,.thoma.mods.thoma-a1,"Returns whether Thoma's A1 is active. Returns a 1 if true, 0 otherwise"
+thoma,.thoma.mods.thoma-q-icd,"Returns whether Thoma's Fiery Collapse is on cooldown. Returns a 1 if true, 0 otherwise"
+thoma,.thoma.mods.thoma-q,"Returns whether Thoma's Elemental burst is active. Returns a 1 if true, 0 otherwise"
+venti,.venti.mods.venti-c4,"Returns whether Venti's C4 is active. If it is, it returns a 1, otherwise 0"
+venti,.debuff.res.<target>.venti-c2-anemo,"Returns whether Venti's C2 Anemo RES shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
+venti,.debuff.res.<target>.venti-c2-phys,"Returns whether Venti's C2 Phys RES shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
+venti,.debuff.res.<target>.venti-c6-anemo,"Returns whether Venti's C6 Anemo RES shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
+xiangling,.status.xianglingguoba,Returns remaining duration of Guoba.
+xiangling,.debuff.res.<target>.xiangling-c1,"Returns whether Xiangling's Pyro RES shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
+xiangling,.status.xianglingburst,Returns remaining duration of Xiangling's Elemental Burst
+xiangling,.<character>.mods.xiangling-c6,"Returns whether Xiangling's C6 is active on the selected character. If it is return a 1, otherwise 0"
+xiao,.xiao.tags.eCharge,Returns the number of skill charges Xiao has.
+xiao,.xiao.mods.xiao-a4,"Returns whether Xiao's A4 is active. If it is, it returns a 1, otherwise 0"
+xiao,.xiao.mods.xiaoburst,"Returns whether Xiao's A4 is active. If it is, it returns a 1, otherwise 0"
+xingqiu,.xingqiu.mods.xingqiuorbitals,"Returns whether Xingqiu's Orbitals are active. If they are, it returns a 1, otherwise 0"
+xingqiu,.xingqiu.mods.xingqiuburst,"Returns whether Xingqiu's Burst are active. If they are, it returns a 1, otherwise 0"
+xingqiu,.xingqiu.mods.xingqiu-burst-icd,"Returns whether Xingqiu's Burst waves are on cooldown. If they are, it returns a 1, otherwise 0"
+xingqiu,.debuff.res.<target>.xingqiu-c2,"Returns whether Xingqiu's Hydro RES shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
+xinyan,.debuff.res.<target>.xinyan-c4,"Returns whether Xinyan's Phys RES shred is active on the selected enemy. If it is, it returns 1, otherwise 0"
+xinyan,.xinyan.mods.xinyan-c1,"Returns whether Xinyan's C1 is active. If it is, it returns a 1, otherwise 0"
+xinyan,.xinyan.mods.xinyan-c1-icd,"Returns whether Xinyan's C1 is on cooldown. If it is, it returns a 1, otherwise 0"
+yae miko,.status.yae_oldest_totem_expiry,"Returns remaining duration of Yae's oldest totem in frames. If any are active, returns a value >0"
+yae miko,.<character>.mods.yaemiko-c4,"Yae's C4. If it is active on the declared character, it returns 1, 0 otherwise."
+yanfei,.yanfei.mods.yanfei-seal,"Returns whether Yanfei has a seal stack. If she does, returns a 1, otherwise 0"
+yanfei,.yanfei.tags.seals,Returns the number if seals Yanfei has
+yanfei,.yanfei.mods.yanfei-q,"Returns whether Yanfei's Elemental Burst is active, if it is, returns a 1, otherwise 0"
+yelan,.<character>.mods.yelan-c4,"Returns whether Yelan's C4 is active on the selected character. If it is, returns a 1, otherwise 0"
+yelan,.status.yelan_c6,Returns the remaining duration of Yelan's C6 in frames
+yelan,.status.yelanburst,Returns the remaining duration of yelan burst in frames
+yelan,.yelan.tags.breakthrough_barb,"Return whether Yelan's Breakthrough Barb is available. If it is, returns a 1, otherwise 0"
+yoimiya,.yoimiya.mods.yoimiyaskill,"Returns whether Yoimiya's skill is active. If it is, 1 otherwise 0"
+yoimiya,.yoimiya.mods.yoimiyaa1,"Returns whether Yoimiya's A1 is active. If it is, 1 otherwise 0"
+yoimiya,.yoimiya.mods.yoimiya-c2,"Returns whether Yoimiya's C2 is active. If it is, 1 otherwise 0"
+yoimiya,.<character>.mods.yoimiya-a4,"Returns whether Yoimiya's A4 is active on the selected character. If it is, 1 otherwise 0"
+yunjin,.yunjin.mods.yunjin-c4,"Returns whether Yunjin's C4 is active. If it is, 1 otherwise 0"
+yunjin,.<character>.mods.yunjin-q,"Returns whether Yunjin's Elemental Burst is active on the selected character. If it is, 1 otherwise 0"
+yunjin,.<character>.mods.yunjin-c2,"Returns whether Yunjin's C2 is active on the selected character. If it is, 1 otherwise 0"
+yunjin,.<character>.mods.yunjin-c6,"Returns whether Yunjin's C6 is active on the selected character. If it is, 1 otherwise 0"
+yunjin,.yunjin.tags.burststacks_<character>,Returns the number of burst stacks the selected character has
+zhongli,.zhongli.tags.shielded,"Returns Whether Zhongli's shield is active. If it is, returns 1, otherwise return 0"
